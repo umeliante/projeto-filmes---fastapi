@@ -49,7 +49,7 @@ def listar_filme():
         finally:
             cursor.close()
             conexao.commit()
-listar_filme()
+
 
 def atualizar_filme(id_filme, nova_nota):
     conexao, cursor = conector()
