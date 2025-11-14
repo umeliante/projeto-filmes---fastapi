@@ -42,7 +42,7 @@ def deletar_filme(id_filmes: int):
     else:
         return {"erro:": "Filme não encontrado"}
     
-@app.atualizar("/filmes/{id_filmes}")
+@app.put("/filmes/{id_filmes}")
 def atulizar_filme(id_filmes: int):
     filmes = funcao.atualizar_filme(id_filmes)
     if filmes:
