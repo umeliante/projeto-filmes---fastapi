@@ -44,7 +44,7 @@ def deletar_filme(id_filmes: int):
     
 @app.put("/filmes/{id_filmes}")
 def atulizar_filme(id_filmes: int):
-    filmes = funcao.atualizar_filme(id_filmes)
+    filmes = funcao.buscar_filme(id_filmes)
     if filmes:
         funcao.atualizar_filme(id_filmes)
         return {"mensagem": "Filme atualizado com sucesso!"}
